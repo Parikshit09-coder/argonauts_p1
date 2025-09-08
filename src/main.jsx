@@ -1,0 +1,21 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import Chatbot from './Pages/Chatbot'
+import Dashboard from './Pages/Dashboard'
+import{ BrowserRouter, Routes, Route} from 'react-router-dom'
+import Navbar from './Components/Navbar'
+
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <BrowserRouter>
+    <Navbar/>
+    <Routes>
+      <Route path='/' element={<Dashboard/>}/>
+      <Route path='/chatbot' element={<Chatbot/>}/>
+    </Routes>
+    </BrowserRouter>
+   
+  </StrictMode>,
+)
