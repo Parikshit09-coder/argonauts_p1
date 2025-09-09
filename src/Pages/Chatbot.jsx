@@ -8,29 +8,49 @@ function Chatbot() {
   const [inputMessage, setInputMessage] = useState("");
   const messagesEndRef = useRef(null);
 
-  const handleSendMessage = () => {
+  const handleSendMessage = async () => {
     if (inputMessage.trim() === "") return;
 
-    // Add user message
-    const newMessage = {
+    const userMessage = {
       id: Date.now(),
       text: inputMessage,
       sender: "user",
     };
 
-    setMessages((prev) => [...prev, newMessage]);
+    setMessages((prev) => [...prev, userMessage]);
     setInputMessage("");
 
-    // Simulate bot response
-    setTimeout(() => {
-      const botResponse = {
+    try {
+      const response = await fetch(
+        "https://parikshit099.app.n8n.cloud/webhook/bbcbd247-b892-452d-8b7c-e869395819a9",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ text: inputMessage }),
+        },
+      );
+    
+
+      const data = await response.json();
+      console.log(data)
+      const botMessage = {
         id: Date.now() + 1,
-        text: "Thanks for your message! I'm a simple chatbot interface.",
+        text: data.text || "Sorry, I didn't get that.",
         sender: "bot",
       };
-      setMessages((prev) => [...prev, botResponse]);
-    }, 1000);
-  };
+      setMessages((prev) => [...prev, botMessage]);
+    } catch (error) {
+      console.error("Error sending message:", error);
+      const botMessage = {
+        id: Date.now() + 1,
+        text: "There was an error. Please try again later.",
+        sender: "bot",
+      };
+      setMessages((prev) => [...prev, botMessage]);
+    }
+  }; 
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
@@ -39,7 +59,6 @@ function Chatbot() {
     }
   };
 
-  // Auto-scroll to bottom on new messages
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
