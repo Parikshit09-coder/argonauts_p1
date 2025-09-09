@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import bgImage from "../assets/new-bg.jpg";
+import bgImage from "../assets/image-from-rawpixel-id-12627536-jpeg.jpg";
 
 function Chatbot() {
   const [messages, setMessages] = useState([
