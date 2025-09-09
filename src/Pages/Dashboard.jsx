@@ -1,8 +1,8 @@
 import React from "react";
-import bgImage from "../assets/new-bg.jpg"; 
-import argoImg from "../assets/argo_img.jpg"; 
+import bgImage from "../assets/new-bg.jpg";
+import argoImg from "../assets/argo_img.jpg";
 import argodeploy from "../assets/argo_deploy.jpg";
-import OurSolution from   "../assets/OurSolution.png";
+import OurSolution from "../assets/OurSolution.png";
 
 function Dashboard() {
   return (
@@ -18,9 +18,12 @@ function Dashboard() {
         {/* Section 1 */}
         <div className="grid grid-cols-2 gap-8 items-center">
           <div className="transition-transform duration-700 hover:scale-105 text-white">
-            <h2 className="text-4xl font-bold mb-4">WHAT IS ARGO AND ARGO FLOATS</h2>
+            <h2 className="text-4xl font-bold mb-4">
+              WHAT IS ARGO AND ARGO FLOATS
+            </h2>
             <p className="text-gray-200">
-              Placeholder for info regarding Argo floats, data flow, or background.
+              Placeholder for info regarding Argo floats, data flow, or
+              background.
             </p>
           </div>
           <div className="transition duration-700 hover:scale-105">
@@ -44,28 +47,29 @@ function Dashboard() {
           <div className="transition-transform duration-700 hover:scale-105 text-white">
             <h2 className="text-4xl font-bold mb-4">THE PROBLEM</h2>
             <p className="text-gray-200">
-              Placeholder for info regarding profiling depths, cycles, or variables.
+              Placeholder for info regarding profiling depths, cycles, or
+              variables.
             </p>
           </div>
         </div>
 
         {/* Section 3 */}
-      <div className="grid grid-cols-2 gap-8 items-center">
-        <div className="transition-transform duration-700 hover:scale-105 text-white">
-          <h2 className="text-4xl font-bold mb-4">Our Solution</h2>
-          <p className="text-gray-200">
-            Placeholder for info about visualization dashboards, RAG, or database setup.
-          </p>
+        <div className="grid grid-cols-2 gap-8 items-center">
+          <div className="transition-transform duration-700 hover:scale-105 text-white">
+            <h2 className="text-4xl font-bold mb-4">Our Solution</h2>
+            <p className="text-gray-200">
+              Placeholder for info about visualization dashboards, RAG, or
+              database setup.
+            </p>
+          </div>
+          <div className="transition duration-700 hover:scale-105">
+            <img
+              src={OurSolution}
+              alt="Dashboard visualization"
+              className="rounded-2xl shadow-lg h-[400px] w-[1400px] object-fit"
+            />
+          </div>
         </div>
-        <div className="transition duration-700 hover:scale-105">
-          <img
-            src={OurSolution}
-            alt="Dashboard visualization"
-            className="rounded-2xl shadow-lg h-[400px] w-[1400px] object-fit"
-          />
-        </div>
-      </div>
-
       </div>
     </div>
   );
