@@ -1,0 +1,682 @@
+[
+  {
+    "argo_id": "ARGO00001",
+    "latitude": -12.5276,
+    "longitude": 110.8266,
+    "temperature_C": 23.906,
+    "salinity_PSU": 34.246,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00004",
+    "latitude": 0.9195,
+    "longitude": 68.9453,
+    "temperature_C": 28.835,
+    "salinity_PSU": 34.833,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00007",
+    "latitude": -31.515,
+    "longitude": 87.2136,
+    "temperature_C": 16.304,
+    "salinity_PSU": 34.327,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00010",
+    "latitude": 7.4844,
+    "longitude": 92.8216,
+    "temperature_C": 25.299,
+    "salinity_PSU": 34.708,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00013",
+    "latitude": 14.9466,
+    "longitude": 83.353,
+    "temperature_C": 20.857,
+    "salinity_PSU": 34.589,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00014",
+    "latitude": -22.2597,
+    "longitude": 73.5775,
+    "temperature_C": 19.978,
+    "salinity_PSU": 34.298,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00016",
+    "latitude": -23.9957,
+    "longitude": 103.5302,
+    "temperature_C": 18.825,
+    "salinity_PSU": 34.513,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00017",
+    "latitude": -16.7455,
+    "longitude": 52.078,
+    "temperature_C": 25.596,
+    "salinity_PSU": 34.632,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00020",
+    "latitude": -17.5263,
+    "longitude": 79.0893,
+    "temperature_C": 23.81,
+    "salinity_PSU": 34.47,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00021",
+    "latitude": 1.7112,
+    "longitude": 87.7564,
+    "temperature_C": 31.249,
+    "salinity_PSU": 34.932,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00023",
+    "latitude": -17.4713,
+    "longitude": 71.2093,
+    "temperature_C": 19.441,
+    "salinity_PSU": 34.274,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00024",
+    "latitude": -13.0183,
+    "longitude": 42.6496,
+    "temperature_C": 22.789,
+    "salinity_PSU": 34.602,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00025",
+    "latitude": -7.6358,
+    "longitude": 84.5173,
+    "temperature_C": 27.735,
+    "salinity_PSU": 34.596,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00027",
+    "latitude": -23.0196,
+    "longitude": 89.0938,
+    "temperature_C": 21.126,
+    "salinity_PSU": 34.443,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00028",
+    "latitude": -4.1459,
+    "longitude": 58.6735,
+    "temperature_C": 28.012,
+    "salinity_PSU": 34.847,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00033",
+    "latitude": -31.0969,
+    "longitude": 112.4694,
+    "temperature_C": 17.18,
+    "salinity_PSU": 34.278,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00036",
+    "latitude": 13.5038,
+    "longitude": 85.9984,
+    "temperature_C": 20.924,
+    "salinity_PSU": 34.433,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00037",
+    "latitude": -16.7232,
+    "longitude": 101.7222,
+    "temperature_C": 21.634,
+    "salinity_PSU": 34.628,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00038",
+    "latitude": -29.1397,
+    "longitude": 75.5201,
+    "temperature_C": 18.522,
+    "salinity_PSU": 34.305,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00039",
+    "latitude": 6.054,
+    "longitude": 72.9651,
+    "temperature_C": 28.576,
+    "salinity_PSU": 35.107,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00040",
+    "latitude": -8.5909,
+    "longitude": 44.1852,
+    "temperature_C": 22.552,
+    "salinity_PSU": 34.76,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00043",
+    "latitude": -32.9367,
+    "longitude": 110.0418,
+    "temperature_C": 15.254,
+    "salinity_PSU": 34.229,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00045",
+    "latitude": -19.4732,
+    "longitude": 53.903,
+    "temperature_C": 21.867,
+    "salinity_PSU": 34.318,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00046",
+    "latitude": 4.7513,
+    "longitude": 54.921,
+    "temperature_C": 25.336,
+    "salinity_PSU": 34.739,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00047",
+    "latitude": -16.2973,
+    "longitude": 92.5956,
+    "temperature_C": 22.693,
+    "salinity_PSU": 34.662,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00050",
+    "latitude": -23.9087,
+    "longitude": 97.9876,
+    "temperature_C": 21.222,
+    "salinity_PSU": 34.124,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00055",
+    "latitude": 0.874,
+    "longitude": 80.6429,
+    "temperature_C": 27.435,
+    "salinity_PSU": 34.985,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00058",
+    "latitude": -23.241,
+    "longitude": 86.3502,
+    "temperature_C": 19.132,
+    "salinity_PSU": 34.317,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00061",
+    "latitude": -11.6794,
+    "longitude": 74.8734,
+    "temperature_C": 23.046,
+    "salinity_PSU": 34.211,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00062",
+    "latitude": -18.7191,
+    "longitude": 89.1895,
+    "temperature_C": 23.29,
+    "salinity_PSU": 34.52,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00063",
+    "latitude": 14.7243,
+    "longitude": 85.1961,
+    "temperature_C": 23.735,
+    "salinity_PSU": 34.36,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00064",
+    "latitude": -13.5948,
+    "longitude": 42.4269,
+    "temperature_C": 22.221,
+    "salinity_PSU": 34.581,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00065",
+    "latitude": -18.1439,
+    "longitude": 91.2179,
+    "temperature_C": 23.571,
+    "salinity_PSU": 34.603,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00066",
+    "latitude": -2.4382,
+    "longitude": 43.7249,
+    "temperature_C": 27.74,
+    "salinity_PSU": 34.615,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00067",
+    "latitude": -26.5445,
+    "longitude": 52.54,
+    "temperature_C": 20.615,
+    "salinity_PSU": 34.323,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00068",
+    "latitude": 13.1318,
+    "longitude": 94.6491,
+    "temperature_C": 24.756,
+    "salinity_PSU": 34.448,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00069",
+    "latitude": -30.527,
+    "longitude": 84.9633,
+    "temperature_C": 16.332,
+    "salinity_PSU": 34.176,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00071",
+    "latitude": 11.3347,
+    "longitude": 85.7613,
+    "temperature_C": 25.567,
+    "salinity_PSU": 34.5,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00072",
+    "latitude": -23.0771,
+    "longitude": 76.8309,
+    "temperature_C": 21.406,
+    "salinity_PSU": 34.515,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00074",
+    "latitude": 13.9277,
+    "longitude": 56.7716,
+    "temperature_C": 23.569,
+    "salinity_PSU": 34.429,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00077",
+    "latitude": 11.2762,
+    "longitude": 117.3011,
+    "temperature_C": 25.226,
+    "salinity_PSU": 34.547,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00079",
+    "latitude": -13.4921,
+    "longitude": 109.2047,
+    "temperature_C": 23.111,
+    "salinity_PSU": 34.819,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00080",
+    "latitude": -28.0479,
+    "longitude": 83.1139,
+    "temperature_C": 20.628,
+    "salinity_PSU": 34.406,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00082",
+    "latitude": 2.3979,
+    "longitude": 70.2637,
+    "temperature_C": 28.665,
+    "salinity_PSU": 34.834,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00083",
+    "latitude": -15.1461,
+    "longitude": 77.6904,
+    "temperature_C": 25.301,
+    "salinity_PSU": 34.617,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00084",
+    "latitude": -31.1865,
+    "longitude": 69.2518,
+    "temperature_C": 17.642,
+    "salinity_PSU": 34.218,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00086",
+    "latitude": -15.489,
+    "longitude": 92.2452,
+    "temperature_C": 22.279,
+    "salinity_PSU": 34.597,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00089",
+    "latitude": 18.2328,
+    "longitude": 84.5472,
+    "temperature_C": 22.097,
+    "salinity_PSU": 34.433,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00092",
+    "latitude": 7.7947,
+    "longitude": 115.3929,
+    "temperature_C": 29.168,
+    "salinity_PSU": 35.032,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00093",
+    "latitude": 10.6471,
+    "longitude": 111.4864,
+    "temperature_C": 22.64,
+    "salinity_PSU": 34.748,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00094",
+    "latitude": -1.3234,
+    "longitude": 57.0159,
+    "temperature_C": 25.373,
+    "salinity_PSU": 34.6,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00097",
+    "latitude": -3.636,
+    "longitude": 62.8184,
+    "temperature_C": 27.911,
+    "salinity_PSU": 35.226,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00098",
+    "latitude": -9.3475,
+    "longitude": 116.6655,
+    "temperature_C": 26.015,
+    "salinity_PSU": 34.838,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00100",
+    "latitude": -28.5265,
+    "longitude": 105.3009,
+    "temperature_C": 16.876,
+    "salinity_PSU": 34.07,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00102",
+    "latitude": 3.1846,
+    "longitude": 58.5098,
+    "temperature_C": 25.72,
+    "salinity_PSU": 34.686,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00103",
+    "latitude": -16.1386,
+    "longitude": 105.1137,
+    "temperature_C": 24.376,
+    "salinity_PSU": 34.474,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00104",
+    "latitude": -4.4858,
+    "longitude": 51.6922,
+    "temperature_C": 26.24,
+    "salinity_PSU": 34.468,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00106",
+    "latitude": -20.0425,
+    "longitude": 75.6801,
+    "temperature_C": 20.741,
+    "salinity_PSU": 34.244,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00107",
+    "latitude": -10.377,
+    "longitude": 113.6155,
+    "temperature_C": 25.284,
+    "salinity_PSU": 34.886,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00108",
+    "latitude": 10.3331,
+    "longitude": 89.603,
+    "temperature_C": 23.541,
+    "salinity_PSU": 34.678,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00109",
+    "latitude": -21.2721,
+    "longitude": 77.0061,
+    "temperature_C": 19.429,
+    "salinity_PSU": 34.339,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00111",
+    "latitude": -17.6149,
+    "longitude": 81.5007,
+    "temperature_C": 22.569,
+    "salinity_PSU": 34.509,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00114",
+    "latitude": 13.4872,
+    "longitude": 71.833,
+    "temperature_C": 23.922,
+    "salinity_PSU": 34.646,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00116",
+    "latitude": 17.2876,
+    "longitude": 94.0769,
+    "temperature_C": 19.704,
+    "salinity_PSU": 34.326,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00117",
+    "latitude": 13.2203,
+    "longitude": 89.7016,
+    "temperature_C": 22.3,
+    "salinity_PSU": 34.353,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00118",
+    "latitude": -23.8058,
+    "longitude": 90.2484,
+    "temperature_C": 19.681,
+    "salinity_PSU": 34.146,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00120",
+    "latitude": -2.6395,
+    "longitude": 49.3592,
+    "temperature_C": 29.776,
+    "salinity_PSU": 35.144,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00123",
+    "latitude": -15.9198,
+    "longitude": 106.7072,
+    "temperature_C": 22.659,
+    "salinity_PSU": 34.404,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00124",
+    "latitude": -28.3969,
+    "longitude": 111.3241,
+    "temperature_C": 16.73,
+    "salinity_PSU": 34.132,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00125",
+    "latitude": -21.3239,
+    "longitude": 71.1342,
+    "temperature_C": 20.859,
+    "salinity_PSU": 34.323,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00126",
+    "latitude": -9.3735,
+    "longitude": 70.1516,
+    "temperature_C": 24.356,
+    "salinity_PSU": 34.457,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00128",
+    "latitude": 16.6438,
+    "longitude": 84.9964,
+    "temperature_C": 20.963,
+    "salinity_PSU": 34.293,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00129",
+    "latitude": -34.5829,
+    "longitude": 90.1967,
+    "temperature_C": 17.407,
+    "salinity_PSU": 34.28,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00130",
+    "latitude": -4.3552,
+    "longitude": 99.5793,
+    "temperature_C": 29.307,
+    "salinity_PSU": 34.827,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00131",
+    "latitude": -9.9553,
+    "longitude": 109.0005,
+    "temperature_C": 24.486,
+    "salinity_PSU": 34.558,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00132",
+    "latitude": -21.6735,
+    "longitude": 53.7995,
+    "temperature_C": 21.499,
+    "salinity_PSU": 34.308,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00133",
+    "latitude": -27.8081,
+    "longitude": 57.5583,
+    "temperature_C": 19.973,
+    "salinity_PSU": 34.281,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00137",
+    "latitude": -3.8726,
+    "longitude": 66.5598,
+    "temperature_C": 26.885,
+    "salinity_PSU": 34.728,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00138",
+    "latitude": 7.1811,
+    "longitude": 74.2645,
+    "temperature_C": 24.215,
+    "salinity_PSU": 34.693,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00143",
+    "latitude": -5.1651,
+    "longitude": 102.2601,
+    "temperature_C": 30.154,
+    "salinity_PSU": 34.762,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00144",
+    "latitude": -16.9473,
+    "longitude": 56.0191,
+    "temperature_C": 20.97,
+    "salinity_PSU": 34.147,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00146",
+    "latitude": -32.7868,
+    "longitude": 72.2243,
+    "temperature_C": 17.401,
+    "salinity_PSU": 34.246,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00147",
+    "latitude": 1.5739,
+    "longitude": 96.9994,
+    "temperature_C": 31.417,
+    "salinity_PSU": 34.979,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00148",
+    "latitude": -4.8393,
+    "longitude": 41.5821,
+    "temperature_C": 24.932,
+    "salinity_PSU": 34.48,
+    "sample_time": "2025-09-13T18:25:30Z"
+  },
+  {
+    "argo_id": "ARGO00149",
+    "latitude": -31.9113,
+    "longitude": 82.289,
+    "temperature_C": 15.851,
+    "salinity_PSU": 34.257,
+    "sample_time": "2025-09-13T18:25:30Z"
+  }
+]

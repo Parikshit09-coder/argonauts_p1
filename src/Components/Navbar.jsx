@@ -26,12 +26,6 @@ function Navbar() {
           <Link to="/about" className="hover:text-blue-400">
             · About Us
           </Link>
-          <Link to="/services" className="hover:text-blue-400">
-          · Services
-          </Link>
-          <Link to="/projects" className="hover:text-blue-400">
-          · Projects
-          </Link>
           <Link to="/contact" className="hover:text-blue-400">
           · Contact
           </Link>
