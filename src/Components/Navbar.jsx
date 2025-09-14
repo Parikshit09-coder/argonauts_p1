@@ -23,8 +23,11 @@ function Navbar() {
       <div className="bg-black flex items-center justify-between px-6">
         {/* Nav links */}
         <div className="flex text-white font-bold text-lg space-x-8">
+          <Link to="/dashboard" className="hover:text-blue-400">
+          . Dashboard
+          </Link>
           <Link to="/about" className="hover:text-blue-400">
-            · About Us
+          · About Us
           </Link>
           <Link to="/contact" className="hover:text-blue-400">
           · Contact

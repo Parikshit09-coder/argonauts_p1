@@ -1,81 +1,146 @@
-import React from "react";
-import bgImage from "../assets/new-bg.jpg";
-import argoImg from "../assets/argo_img.jpg";
-import argodeploy from "../assets/argo_deploy.jpg";
-import OurSolution from "../assets/OurSolution.png";
+import React, { useEffect, useState } from 'react';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
 
-function Dashboard() {
+const Dashboard = () => {
+  const [data, setData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
+  const [argoId, setArgoId] = useState('');
+  const [selectedPoint, setSelectedPoint] = useState(null);
+
+  useEffect(() => {
+    console.log('Starting to fetch data...');
+    fetch('/data/floats.json')
+      .then(response => {
+        console.log('Fetch response status:', response.status);
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(jsonData => {
+        console.log('Data loaded successfully:', jsonData);
+        const arrayData = Array.isArray(jsonData) ? jsonData : [jsonData];
+        setData(arrayData);
+      })
+      .catch(error => {
+        console.error('Error loading JSON data:', error);
+      });
+  }, []);
+
+  const handleSearch = () => {
+    console.log('Search triggered');
+    const id = argoId.trim().toLowerCase();
+    console.log('Searching for Argo ID:', id);
+    const result = data.filter(point => point.argo_id.toLowerCase() === id);
+    console.log('Search result:', result);
+    setFilteredData(result);
+    if (result.length > 0) {
+      console.log('Match found:', result[0]);
+      setSelectedPoint(result[0]);
+    } else {
+      console.log('No match found');
+      setSelectedPoint(null);
+    }
+  };
+
   return (
-    <div
-      className="min-h-screen bg-cover bg-center relative"
-      style={{ backgroundImage: `url(${bgImage})` }}
-    >
-      {/* Overlay for fade/dark effect */}
-      <div className="absolute inset-0 bg-black/50"></div>
+    <div style={{ background: 'linear-gradient(to right, #0f2027, #203a43, #2c5364)', minHeight: '100vh', color: '#fff', padding: '20px' }}>
+      <h2 style={{ textAlign: 'center', marginBottom: '30px', fontSize: '2.5rem' }}>Argo Data Dashboard</h2>
 
-      {/* Content on top of overlay */}
-      <div className="relative space-y-32 p-10 pt-32">
-        {/* Section 1 */}
-        <div className="grid grid-cols-2 gap-8 items-center">
-          <div className="transition-transform duration-700 hover:scale-105 text-white">
-            <h2 className="text-4xl font-bold mb-4">
-              WHAT IS ARGO AND ARGO FLOATS
-            </h2>
-            <p className="text-gray-200 text-3xl">
-              <h2>
-              Argo is a global ocean observation program that uses a network of autonomous drifting floats, known as Argo floats, to collect vital data from the world’s oceans. These floats periodically dive to depths of up to 2,000 meters, measuring key parameters such as temperature, salinity, and ocean currents. The collected data is then transmitted via satellite to research centers around the world. This information helps scientists understand ocean circulation, monitor climate change, improve weather forecasts, and support marine ecosystem studies. Argo’s continuous data collection plays a crucial role in enhancing our understanding of the Earth’s oceans and their impact on the environment.
-              </h2>
-            </p>
-          </div>
-          <div className="transition duration-700 hover:scale-105">
-            <img
-              src={argodeploy}
-              alt="Argo process"
-              className="rounded-2xl shadow-lg"
-            />
-          </div>
+      {/* Search Area */}
+      <div style={{ textAlign: 'center', marginBottom: '30px' }}>
+        <input
+          type="text"
+          placeholder="Enter Argo ID..."
+          value={argoId}
+          onChange={e => setArgoId(e.target.value)}
+          style={{
+            padding: '10px',
+            width: '250px',
+            borderRadius: '8px',
+            border: 'none',
+            outline: 'none',
+            fontSize: '1rem'
+          }}
+        />
+        <button
+          onClick={handleSearch}
+          style={{
+            padding: '10px 20px',
+            marginLeft: '10px',
+            borderRadius: '8px',
+            border: 'none',
+            backgroundColor: '#4CAF50',
+            color: '#fff',
+            fontSize: '1rem',
+            cursor: 'pointer'
+          }}
+        >
+          Search
+        </button>
+      </div>
+
+      {filteredData.length === 0 && argoId && (
+        <p style={{ textAlign: 'center', color: '#ff4c4c', fontWeight: 'bold' }}>No data found for this Argo ID.</p>
+      )}
+
+      {/* Charts Section */}
+      <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap', gap: '20px' }}>
+        <div style={{ backgroundColor: '#1c1c1c', borderRadius: '12px', boxShadow: '0 4px 8px rgba(0,0,0,0.2)', width: '45%', height: '300px', padding: '10px' }}>
+          <h3 style={{ textAlign: 'center', marginBottom: '10px' }}>Temperature (°C)</h3>
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart data={filteredData}>
+              <CartesianGrid stroke="#444" strokeDasharray="5 5" />
+              <XAxis dataKey="sample_time" tickFormatter={(time) => new Date(time).toLocaleTimeString()} stroke="#ccc" />
+              <YAxis stroke="#ccc" />
+              <Tooltip contentStyle={{ backgroundColor: '#333', borderColor: '#555' }} labelFormatter={(time) => new Date(time).toLocaleString()} />
+              <Legend />
+              <Line type="monotone" dataKey="temperature_C" stroke="#FF5733" strokeWidth={3} name="Temperature (°C)" dot={{ r: 4 }} />
+            </LineChart>
+          </ResponsiveContainer>
         </div>
 
-        {/* Section 2 */}
-        <div className="grid grid-cols-2 gap-8 items-center">
-          <div className="transition duration-700 hover:scale-105">
-            <img
-              src={argoImg}
-              alt="Profile chart"
-              className="rounded-2xl shadow-lg"
-            />
-          </div>
-          <div className="transition-transform duration-700 hover:scale-105 text-white">
-            <h2 className="text-4xl font-bold mb-4">THE PROBLEM</h2>
-            <p className="text-gray-200 text-3xl">
-              <h2>
-              Argo floats gather important information such as temperature, salinity, and pressure by diving to different depths and repeating this process through regular cycles. The collected data is stored in NetCDF files, a format designed for large-scale scientific data. While these files are efficient for storing and sharing information, they are complex to access and require specialized software and knowledge to interpret, making it challenging for many users to work with the data directly.
-              </h2>
-            </p>
-          </div>
-        </div>
-
-        {/* Section 3 */}
-        <div className="grid grid-cols-2 gap-8 items-center">
-          <div className="transition-transform duration-700 hover:scale-105 text-white">
-            <h2 className="text-4xl font-bold mb-4">Our Solution</h2>
-            <p className="text-gray-200 text-3xl">
-              <h2>
-              Our solution simplifies access to complex ocean data by providing intuitive visualization dashboards that make it easy to explore key variables like temperature and salinity. We use Retrieval-Augmented Generation (RAG) to enhance data search and insights, and store the processed information in a structured database, making it accessible, understandable, and actionable for researchers and users without requiring advanced technical skills.
-              </h2>
-            </p>
-          </div>
-          <div className="transition duration-700 hover:scale-105">
-            <img
-              src={OurSolution}
-              alt="Dashboard visualization"
-              className="rounded-2xl shadow-lg h-[400px] w-[1400px] object-fit"
-            />
-          </div>
+        <div style={{ backgroundColor: '#1c1c1c', borderRadius: '12px', boxShadow: '0 4px 8px rgba(0,0,0,0.2)', width: '45%', height: '300px', padding: '10px' }}>
+          <h3 style={{ textAlign: 'center', marginBottom: '10px' }}>Salinity (PSU)</h3>
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart data={filteredData}>
+              <CartesianGrid stroke="#444" strokeDasharray="5 5" />
+              <XAxis dataKey="sample_time" tickFormatter={(time) => new Date(time).toLocaleTimeString()} stroke="#ccc" />
+              <YAxis stroke="#ccc" />
+              <Tooltip contentStyle={{ backgroundColor: '#333', borderColor: '#555' }} labelFormatter={(time) => new Date(time).toLocaleString()} />
+              <Legend />
+              <Line type="monotone" dataKey="salinity_PSU" stroke="#33C1FF" strokeWidth={3} name="Salinity (PSU)" dot={{ r: 4 }} />
+            </LineChart>
+          </ResponsiveContainer>
         </div>
       </div>
+
+      {/* Map Section */}
+      {selectedPoint && (
+        <div style={{ marginTop: '40px', width: '100%', maxWidth: '800px', marginLeft: 'auto', marginRight: 'auto', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 8px rgba(0,0,0,0.2)' }}>
+          <h3 style={{ textAlign: 'center', backgroundColor: '#222', margin: 0, padding: '10px', borderBottom: '1px solid #444' }}>Location Map</h3>
+          <MapContainer
+            center={[selectedPoint.latitude, selectedPoint.longitude]}
+            zoom={5}
+            style={{ height: '400px', width: '100%' }}
+          >
+            <TileLayer
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              attribution="&copy; OpenStreetMap contributors"
+            />
+            <Marker position={[selectedPoint.latitude, selectedPoint.longitude]}>
+              <Popup>
+                {selectedPoint.argo_id} <br />
+                Lat: {selectedPoint.latitude}, Lon: {selectedPoint.longitude}
+              </Popup>
+            </Marker>
+          </MapContainer>
+        </div>
+      )}
     </div>
   );
-}
+};
 
 export default Dashboard;
