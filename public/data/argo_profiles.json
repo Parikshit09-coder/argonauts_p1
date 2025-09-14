@@ -1,0 +1,410 @@
+{
+  "1902294": [
+    {
+      "latitude_degN": -58.38771,
+      "longitude_degE": 56.31797,
+      "measurements": {
+        "0": {
+          "pressure_dbar": 198.0,
+          "temperature_degC": 1.784000039100647,
+          "salinity_psu": 34.4119987487793
+        },
+        "100": {
+          "pressure_dbar": 598.0,
+          "temperature_degC": 2.013000011444092,
+          "salinity_psu": 34.68899917602539
+        },
+        "200": {
+          "pressure_dbar": 998.0,
+          "temperature_degC": 1.7450000047683716,
+          "salinity_psu": 34.744998931884766
+        },
+        "300": {
+          "pressure_dbar": 1399.9599609375,
+          "temperature_degC": 1.3700000047683716,
+          "salinity_psu": 34.73400115966797
+        },
+        "400": {
+          "pressure_dbar": 1798.0,
+          "temperature_degC": 1.0080000162124634,
+          "salinity_psu": 34.7140007019043
+        },
+        "500": {
+          "pressure_dbar": 2005.8800048828125,
+          "temperature_degC": 0.8240000009536743,
+          "salinity_psu": 34.702999114990234
+        }
+      }
+    }
+  ],
+  "3902658": [
+    {
+      "latitude_degN": -7.6237,
+      "longitude_degE": 74.3606,
+      "measurements": {
+        "0": {
+          "pressure_dbar": 200.0,
+          "temperature_degC": 13.055000305175781,
+          "salinity_psu": 35.04199981689453
+        },
+        "100": {
+          "pressure_dbar": 598.0,
+          "temperature_degC": 8.458999633789062,
+          "salinity_psu": 34.8120002746582
+        },
+        "200": {
+          "pressure_dbar": 1000.0,
+          "temperature_degC": 5.873000144958496,
+          "salinity_psu": 34.75299835205078
+        },
+        "300": {
+          "pressure_dbar": 1398.0,
+          "temperature_degC": 4.1620001792907715,
+          "salinity_psu": 34.770999908447266
+        },
+        "400": {
+          "pressure_dbar": 1800.0,
+          "temperature_degC": 3.063999891281128,
+          "salinity_psu": 34.770999908447266
+        },
+        "500": {
+          "pressure_dbar": 2005.699951171875,
+          "temperature_degC": 2.61299991607666,
+          "salinity_psu": 34.75400161743164
+        }
+      }
+    }
+  ],
+  "2903470": [
+    {
+      "latitude_degN": -45.8716,
+      "longitude_degE": 24.5714,
+      "measurements": {
+        "0": {
+          "pressure_dbar": 200.0,
+          "temperature_degC": 5.4029998779296875,
+          "salinity_psu": 34.180999755859375
+        },
+        "100": {
+          "pressure_dbar": 597.9000244140625,
+          "temperature_degC": 3.444999933242798,
+          "salinity_psu": 34.207000732421875
+        },
+        "200": {
+          "pressure_dbar": 999.8499755859375,
+          "temperature_degC": 2.906100034713745,
+          "salinity_psu": 34.4213981628418
+        },
+        "300": {
+          "pressure_dbar": 1299.4599609375,
+          "temperature_degC": 2.7098000049591064,
+          "salinity_psu": 34.56700134277344
+        },
+        "400": {
+          "pressure_dbar": 1697.93994140625,
+          "temperature_degC": 2.5996999740600586,
+          "salinity_psu": 34.7036018371582
+        }
+      }
+    }
+  ],
+  "2902773": [
+    {
+      "latitude_degN": -6.23,
+      "longitude_degE": 75.583,
+      "measurements": {
+        "0": {
+          "pressure_dbar": 195.3000030517578,
+          "temperature_degC": 14.119999885559082,
+          "salinity_psu": 35.04899978637695
+        },
+        "100": {
+          "pressure_dbar": 587.7999877929688,
+          "temperature_degC": 8.809000015258789,
+          "salinity_psu": 34.834999084472656
+        },
+        "200": {
+          "pressure_dbar": 987.7999877929688,
+          "temperature_degC": 6.034999847412109,
+          "salinity_psu": 34.78200149536133
+        },
+        "300": {
+          "pressure_dbar": 1387.5999755859375,
+          "temperature_degC": 4.341000080108643,
+          "salinity_psu": 34.78200149536133
+        },
+        "400": {
+          "pressure_dbar": 1787.800048828125,
+          "temperature_degC": 2.933000087738037,
+          "salinity_psu": 34.76100158691406
+        },
+        "500": {
+          "pressure_dbar": 1977.199951171875,
+          "temperature_degC": 2.625,
+          "salinity_psu": 34.76100158691406
+        }
+      }
+    }
+  ],
+  "2902772": [
+    {
+      "latitude_degN": 14.333,
+      "longitude_degE": 85.308,
+      "measurements": {
+        "0": {
+          "pressure_dbar": 195.5,
+          "temperature_degC": 15.062000274658203,
+          "salinity_psu": 34.95600128173828
+        },
+        "100": {
+          "pressure_dbar": 588.0999755859375,
+          "temperature_degC": 9.428000450134277,
+          "salinity_psu": 35.020999908447266
+        },
+        "200": {
+          "pressure_dbar": 989.0,
+          "temperature_degC": 6.800000190734863,
+          "salinity_psu": 34.94300079345703
+        },
+        "300": {
+          "pressure_dbar": 1388.0,
+          "temperature_degC": 4.948999881744385,
+          "salinity_psu": 34.87300109863281
+        },
+        "400": {
+          "pressure_dbar": 1787.5999755859375,
+          "temperature_degC": 3.259999990463257,
+          "salinity_psu": 34.80500030517578
+        },
+        "500": {
+          "pressure_dbar": 1988.9000244140625,
+          "temperature_degC": 2.763000011444092,
+          "salinity_psu": 34.78300094604492
+        }
+      }
+    }
+  ],
+  "2902767": [
+    {
+      "latitude_degN": -3.635,
+      "longitude_degE": 95.562,
+      "measurements": {
+        "0": {
+          "pressure_dbar": 195.39999389648438,
+          "temperature_degC": 14.420000076293945,
+          "salinity_psu": 35.12200164794922
+        },
+        "100": {
+          "pressure_dbar": 587.7000122070312,
+          "temperature_degC": 8.744999885559082,
+          "salinity_psu": 34.882999420166016
+        },
+        "200": {
+          "pressure_dbar": 987.7000122070312,
+          "temperature_degC": 6.633999824523926,
+          "salinity_psu": 34.89500045776367
+        },
+        "300": {
+          "pressure_dbar": 1387.9000244140625,
+          "temperature_degC": 4.757999897003174,
+          "salinity_psu": 34.832000732421875
+        },
+        "400": {
+          "pressure_dbar": 1788.0999755859375,
+          "temperature_degC": 3.3010001182556152,
+          "salinity_psu": 34.7869987487793
+        },
+        "500": {
+          "pressure_dbar": 1979.9000244140625,
+          "temperature_degC": 2.7899999618530273,
+          "salinity_psu": 34.77299880981445
+        }
+      }
+    }
+  ],
+  "2902768": [
+    {
+      "latitude_degN": 13.85,
+      "longitude_degE": 81.047,
+      "measurements": {
+        "0": {
+          "pressure_dbar": 195.60000610351562,
+          "temperature_degC": 14.35200023651123,
+          "salinity_psu": 34.983001708984375
+        },
+        "100": {
+          "pressure_dbar": 588.0999755859375,
+          "temperature_degC": 9.262999534606934,
+          "salinity_psu": 35.01499938964844
+        },
+        "200": {
+          "pressure_dbar": 987.7000122070312,
+          "temperature_degC": 6.682000160217285,
+          "salinity_psu": 34.93299865722656
+        },
+        "300": {
+          "pressure_dbar": 1388.0999755859375,
+          "temperature_degC": 4.9079999923706055,
+          "salinity_psu": 34.8650016784668
+        },
+        "400": {
+          "pressure_dbar": 1787.9000244140625,
+          "temperature_degC": 3.250999927520752,
+          "salinity_psu": 34.79899978637695
+        },
+        "500": {
+          "pressure_dbar": 1963.300048828125,
+          "temperature_degC": 2.8269999027252197,
+          "salinity_psu": 34.779998779296875
+        }
+      }
+    }
+  ],
+  "2902770": [
+    {
+      "latitude_degN": 10.746,
+      "longitude_degE": 91.448,
+      "measurements": {
+        "0": {
+          "pressure_dbar": 195.0,
+          "temperature_degC": 14.895000457763672,
+          "salinity_psu": 34.95600128173828
+        },
+        "100": {
+          "pressure_dbar": 588.2999877929688,
+          "temperature_degC": 9.187000274658203,
+          "salinity_psu": 35.007999420166016
+        },
+        "200": {
+          "pressure_dbar": 987.5,
+          "temperature_degC": 6.815000057220459,
+          "salinity_psu": 34.9379997253418
+        },
+        "300": {
+          "pressure_dbar": 1388.199951171875,
+          "temperature_degC": 5.031000137329102,
+          "salinity_psu": 34.869998931884766
+        },
+        "400": {
+          "pressure_dbar": 1788.0,
+          "temperature_degC": 3.2799999713897705,
+          "salinity_psu": 34.803001403808594
+        },
+        "500": {
+          "pressure_dbar": 1983.699951171875,
+          "temperature_degC": 2.8399999141693115,
+          "salinity_psu": 34.784000396728516
+        }
+      }
+    }
+  ],
+  "5904816": [
+    {
+      "latitude_degN": -32.382,
+      "longitude_degE": 97.793,
+      "measurements": {
+        "0": {
+          "pressure_dbar": 200.0,
+          "temperature_degC": 13.555000305175781,
+          "salinity_psu": 0.04699999839067459
+        },
+        "100": {
+          "pressure_dbar": 598.0,
+          "temperature_degC": 9.413999557495117,
+          "salinity_psu": 0.039000000804662704
+        },
+        "200": {
+          "pressure_dbar": 996.2000122070312,
+          "temperature_degC": 4.804999828338623,
+          "salinity_psu": 0.029999999329447746
+        },
+        "300": {
+          "pressure_dbar": 1398.5999755859375,
+          "temperature_degC": 3.38100004196167,
+          "salinity_psu": 0.026000000536441803
+        },
+        "400": {
+          "pressure_dbar": 1747.800048828125,
+          "temperature_degC": 2.8519999980926514,
+          "salinity_psu": 0.02500000037252903
+        }
+      }
+    }
+  ],
+  "6902951": [
+    {
+      "latitude_degN": -9.921461666666668,
+      "longitude_degE": 54.64684333333334,
+      "measurements": {
+        "0": {
+          "pressure_dbar": 199.0,
+          "temperature_degC": 13.107000350952148,
+          "salinity_psu": 35.047000885009766
+        },
+        "100": {
+          "pressure_dbar": 599.5999755859375,
+          "temperature_degC": 8.401000022888184,
+          "salinity_psu": 34.750999450683594
+        },
+        "200": {
+          "pressure_dbar": 999.2999877929688,
+          "temperature_degC": 6.070000171661377,
+          "salinity_psu": 34.77399826049805
+        },
+        "300": {
+          "pressure_dbar": 1399.199951171875,
+          "temperature_degC": 4.163000106811523,
+          "salinity_psu": 34.71900177001953
+        },
+        "400": {
+          "pressure_dbar": 1797.9000244140625,
+          "temperature_degC": 2.9200000762939453,
+          "salinity_psu": 34.6879997253418
+        },
+        "500": {
+          "pressure_dbar": 2000.9000244140625,
+          "temperature_degC": 2.568000078201294,
+          "salinity_psu": 34.678001403808594
+        }
+      }
+    }
+  ],
+  "1901761": [
+    {
+      "latitude_degN": -37.565,
+      "longitude_degE": 34.3075,
+      "measurements": {
+        "0": {
+          "pressure_dbar": 200.0,
+          "temperature_degC": 17.672000885009766,
+          "salinity_psu": 35.5629997253418
+        },
+        "100": {
+          "pressure_dbar": 598.0,
+          "temperature_degC": 12.687999725341797,
+          "salinity_psu": 35.1609992980957
+        },
+        "200": {
+          "pressure_dbar": 1000.0,
+          "temperature_degC": 7.705999851226807,
+          "salinity_psu": 34.560001373291016
+        },
+        "300": {
+          "pressure_dbar": 1398.0,
+          "temperature_degC": 4.139999866485596,
+          "salinity_psu": 34.42900085449219
+        },
+        "400": {
+          "pressure_dbar": 1800.0,
+          "temperature_degC": 3.1410000324249268,
+          "salinity_psu": 34.61600112915039
+        },
+        "500": {
+          "pressure_dbar": 2001.5999755859375,
+          "temperature_degC": 2.9140000343322754,
+          "salinity_psu": 34.68600082397461
+        }
+      }
+    }
+  ]
+}
