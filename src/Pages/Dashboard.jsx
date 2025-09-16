@@ -9,38 +9,41 @@ import 'leaflet/dist/leaflet.css';
 const Dashboard = () => {
   const [data, setData] = useState({});
   const [argoId, setArgoId] = useState('');
+  const [availableIds, setAvailableIds] = useState([]);
   const [selectedProfiles, setSelectedProfiles] = useState([]);
   const [selectedPoint, setSelectedPoint] = useState(null);
 
-  // Load JSON
+  // Load JSON data
   useEffect(() => {
     fetch('/data/argo_profiles.json')
       .then(res => res.json())
-      .then(json => setData(json))
+      .then(json => {
+        setData(json);
+        setAvailableIds(Object.keys(json)); // Extract all IDs
+      })
       .catch(err => console.error('Error loading JSON:', err));
   }, []);
 
-  // Search handler
-  const handleSearch = () => {
-    const id = argoId.trim();
-    if (!id || !data[id]) {
+  // Update selected profiles when argoId changes
+  useEffect(() => {
+    if (!argoId || !data[argoId]) {
       setSelectedProfiles([]);
       setSelectedPoint(null);
       return;
     }
-    setSelectedProfiles(data[id]);
+    setSelectedProfiles(data[argoId]);
     setSelectedPoint({
-      argoId: id,
-      latitude: data[id][0].latitude_degN,
-      longitude: data[id][0].longitude_degE
+      argoId: argoId,
+      latitude: data[argoId][0].latitude_degN,
+      longitude: data[argoId][0].longitude_degE
     });
-  };
+  }, [argoId, data]);
 
-  // Convert one profile → chart-friendly array
+  // Convert profile data for charts
   const profileToChartData = (profile) => {
     return Object.values(profile.measurements)
       .map(vals => ({
-        depth: vals.pressure_dbar, // use actual pressure as depth
+        depth: vals.pressure_dbar,
         temperature: vals.temperature_degC,
         salinity: vals.salinity_psu
       }))
@@ -58,11 +61,9 @@ const Dashboard = () => {
         Argo Data Dashboard
       </h2>
 
-      {/* Search */}
+      {/* Dropdown for selecting Argo ID */}
       <div style={{ textAlign: 'center', marginBottom: '30px' }}>
-        <input className='text-black bg-white hover:bg-gray-200'
-          type="text"
-          placeholder="Enter Argo ID (e.g., 1902294)"
+        <select
           value={argoId}
           onChange={e => setArgoId(e.target.value)}
           style={{
@@ -71,24 +72,18 @@ const Dashboard = () => {
             borderRadius: '8px',
             border: 'none',
             outline: 'none',
-            fontSize: '1rem'
-          }}
-        />
-        <button
-          onClick={handleSearch}
-          style={{
-            padding: '10px 20px',
-            marginLeft: '10px',
-            borderRadius: '8px',
-            border: 'none',
-            backgroundColor: '#4CAF50',
-            color: '#fff',
             fontSize: '1rem',
-            cursor: 'pointer'
+            color: '#000',
+            backgroundColor: '#fff'
           }}
         >
-          Search
-        </button>
+          <option value="">Select Argo ID</option>
+          {availableIds.map(id => (
+            <option key={id} value={id} style={{ color: '#000', backgroundColor: '#fff' }}>
+              {id}
+            </option>
+          ))}
+        </select>
       </div>
 
       {/* Charts */}
@@ -115,27 +110,27 @@ const Dashboard = () => {
                 margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
               >
                 <CartesianGrid stroke="#444" strokeDasharray="5 5" />
-                <XAxis 
-                  dataKey="temperature" 
-                  type="number" 
+                <XAxis
+                  dataKey="temperature"
+                  type="number"
                   stroke="#ccc"
-                  label={{ value: 'Temperature (°C)', position: 'insideBottom', offset: -5 }} 
+                  label={{ value: 'Temperature (°C)', position: 'insideBottom', offset: -5 }}
                 />
-                <YAxis 
-                  dataKey="depth" 
-                  type="number" 
-                  stroke="#ccc" 
+                <YAxis
+                  dataKey="depth"
+                  type="number"
+                  stroke="#ccc"
                   reversed
                   domain={['dataMax + 100', 'dataMin - 100']}
-                  label={{ value: 'Depth (dbar)', angle: -90, position: 'insideLeft' }} 
+                  label={{ value: 'Depth (dbar)', angle: -90, position: 'insideLeft' }}
                 />
                 <Tooltip />
                 <Legend />
-                <Line 
-                  type="monotone" 
-                  dataKey="depth" 
-                  stroke="#FF5733" 
-                  strokeWidth={2} 
+                <Line
+                  type="monotone"
+                  dataKey="depth"
+                  stroke="#FF5733"
+                  strokeWidth={2}
                   dot={false}
                   activeDot={{ r: 6 }}
                 />
@@ -159,27 +154,27 @@ const Dashboard = () => {
                 margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
               >
                 <CartesianGrid stroke="#444" strokeDasharray="5 5" />
-                <XAxis 
-                  dataKey="salinity" 
-                  type="number" 
+                <XAxis
+                  dataKey="salinity"
+                  type="number"
                   stroke="#ccc"
-                  label={{ value: 'Salinity (PSU)', position: 'insideBottom', offset: -5 }} 
+                  label={{ value: 'Salinity (PSU)', position: 'insideBottom', offset: -5 }}
                 />
-                <YAxis 
-                  dataKey="depth" 
-                  type="number" 
-                  stroke="#ccc" 
+                <YAxis
+                  dataKey="depth"
+                  type="number"
+                  stroke="#ccc"
                   reversed
                   domain={['dataMax + 100', 'dataMin - 100']}
-                  label={{ value: 'Depth (dbar)', angle: -90, position: 'insideLeft' }} 
+                  label={{ value: 'Depth (dbar)', angle: -90, position: 'insideLeft' }}
                 />
                 <Tooltip />
                 <Legend />
-                <Line 
-                  type="monotone" 
-                  dataKey="depth" 
-                  stroke="#33C1FF" 
-                  strokeWidth={2} 
+                <Line
+                  type="monotone"
+                  dataKey="depth"
+                  stroke="#33C1FF"
+                  strokeWidth={2}
                   dot={false}
                   activeDot={{ r: 6 }}
                 />
